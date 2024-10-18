@@ -287,5 +287,5 @@ This will open the Vivado project.
 1. To generate a timing report, run the following command in the Vivado terminal:
    ```bash
    report_timing -max_paths 1 -nworst 1 -delay_type max -sort_by slack
-
-   - You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
+   
+    - You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
