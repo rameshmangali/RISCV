@@ -206,3 +206,76 @@ Before starting, ensure you have:
 
   In the same repository, I will make reports in PDF format. When you click on the text below, it will navigate to the PDF I have posted in that repository:
 
+---
+
+## Step 15: Create a Project
+
+1. **Open Command Prompt (CMD)**  
+   - Launch the CMD terminal.  
+   - Navigate to the appropriate directory.  
+   - Run the following command:  
+     ```bash
+     vivado -source create_project_arty_a7_100t.tcl
+     ```
+
+This will open the Vivado project.
+
+---
+
+## Step 16: Add Source Files
+
+1. Go to the **"Source"** tab.
+2. Click on the **"+" (Add Source)** button.
+3. Proceed to the next window and add the Verilog files (`.v` files) from the **hardware folder** located in the **board folder**.
+4. Click **Finish** to complete adding the files.
+
+---
+
+## Step 17: Run Synthesis
+
+1. Click **Run Synthesis**.
+2. Wait for the synthesis process to complete successfully.
+
+---
+
+## Step 18: Run Implementation
+
+1. After successful synthesis, click **Run Implementation**.
+2. Wait for the implementation process to complete.
+3. Next, go to **Netlist**, follow the directions, and click on **Schematic**.
+
+---
+
+## Step 19: View the Device Output
+
+1. After both synthesis and implementation are complete, you can view the device output.
+2. Navigate to the **Netlist** tab.
+3. Follow the directions to click on **Schematic**.
+
+---
+
+## Step 20: View the Block Diagram
+
+1. Double-click on the **Block Diagram** in the project window.
+2. The schematic view of the **RISC-V architecture** will appear.
+
+---
+
+## Step 21: View Reports
+
+1. At the lower panel, go to the **Reports** section.
+2. Here, you can observe the reports for both the **Synthesis** and **Implementation** processes.
+
+---
+
+## Step 22: Power Analysis
+
+1. Click on the **Power Report** to check the power consumption of both the synthesis and implementation phases.
+
+---
+
+## Step 23: Timing Analysis
+
+1. To generate a timing report, run the following command in the Vivado terminal:
+   ```bash
+   report_timing -max_paths 1 -nworst 1 -delay_type max -sort_by slack
