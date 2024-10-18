@@ -140,6 +140,17 @@ Before starting, ensure you have:
 
 ---
 
+## Step 11: Run Hello World Example
+1. Navigate to the hello_world example directory:
+   ```bash
+   cd ./riscv-steel/examples/hello_world/software
+2. Once inside, compile the example program by running:
+   ```bash
+   make
+3. If any errors occur during this process, follow the troubleshooting guide provided in the RISC-V Steel documentation or visit the repository for further assistance.
+
+---
+
 ## Step 12: Download and Install Vivado
 1. **Download Vivado SDK:**
    - Visit the Xilinx download page [here](https://www.xilinx.com/support/download.html).
