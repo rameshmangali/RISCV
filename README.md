@@ -242,10 +242,6 @@ This will open the Vivado project.
 
 1. After successful synthesis, click **Run Implementation**.
 2. Wait for the implementation process to complete.
-3. ## Step 18: Run Implementation
-
-1. After successful synthesis, click **Run Implementation**.
-2. Wait for the implementation process to complete.
 3. Next, go to **Netlist** and select **rvsteel_mcu_instance**, then click on **Schematic**.
 
 ---
@@ -269,8 +265,9 @@ This will open the Vivado project.
 
 1. At the lower panel, go to the **Reports** section.
 2. Here, you can observe the reports for both the **Synthesis** and **Implementation** processes.
-- [Power Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf)
-- [Power Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf)
+You can view the [Power Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf) for more details.
+You can view the [Power Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
+
 ---
 
 ## Step 22: Power Analysis
