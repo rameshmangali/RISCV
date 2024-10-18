@@ -258,7 +258,7 @@ This will open the Vivado project.
 
 1. Double-click on the **Block Diagram** in the project window.
 2. The schematic view of the **RISC-V architecture** will appear.
-- You can view the [Schematic Report](https://github.com/rameshmangali/RISCV/blob/main/Schematic%20Analysis%20Report.pdf) for more details.
+   - You can view the [Schematic Report](https://github.com/rameshmangali/RISCV/blob/main/Schematic%20Analysis%20Report.pdf) for more details.
 ---
 
 ## Step 21: View Reports
@@ -266,9 +266,9 @@ This will open the Vivado project.
 1. At the lower panel, go to the **Reports** section.
 2. Here, you can observe the reports for both the **Synthesis** and **Implementation** processes.
 
-- You can view the [Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Synthesis_Report.pdf) for more details.
+   - You can view the [Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Synthesis_Report.pdf) for more details.
 
-- You can view the [Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Implementation_Report.pdf) for more details.
+   - You can view the [Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Implementation_Report.pdf) for more details.
 
 ---
 
@@ -276,9 +276,9 @@ This will open the Vivado project.
 
 1. Click on the **Power Report** to check the power consumption of both the synthesis and implementation phases.
 
-- You can view the [Power synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
+   - You can view the [Power synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
 
-- You can view the [Power implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf) for more details.
+   - You can view the [Power implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf) for more details.
 
 ---
 
@@ -287,4 +287,4 @@ This will open the Vivado project.
 1. To generate a timing report, run the following command in the Vivado terminal:
    ```bash
    report_timing -max_paths 1 -nworst 1 -delay_type max -sort_by slack
-- You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
+   - You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
