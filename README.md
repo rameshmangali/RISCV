@@ -206,5 +206,3 @@ Before starting, ensure you have:
 
   In the same repository, I will make reports in PDF format. When you click on the text below, it will navigate to the PDF I have posted in that repository:
 
-[View Reports](https://github.com/rameshmangali/RISCV/blob/main/ramesh_resume%2001%20April.pdf)
-
