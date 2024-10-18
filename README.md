@@ -258,7 +258,7 @@ This will open the Vivado project.
 
 1. Double-click on the **Block Diagram** in the project window.
 2. The schematic view of the **RISC-V architecture** will appear.
-You can view the [Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Schematic%20Analysis%20Report.pdf) for more details.
+You can view the [Schematic Report](https://github.com/rameshmangali/RISCV/blob/main/Schematic%20Analysis%20Report.pdf) for more details.
 ---
 
 ## Step 21: View Reports
