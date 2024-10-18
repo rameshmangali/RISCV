@@ -266,9 +266,9 @@ You can view the [Schematic Report](https://github.com/rameshmangali/RISCV/blob/
 1. At the lower panel, go to the **Reports** section.
 2. Here, you can observe the reports for both the **Synthesis** and **Implementation** processes.
 
-You can view the [Power Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf) for more details.
+You can view the [Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Synthesis_Report.pdf) for more details.
 
-You can view the [Power Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
+You can view the [Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Implementation_Report.pdf) for more details.
 
 ---
 
@@ -276,7 +276,8 @@ You can view the [Power Implementation Report](https://github.com/rameshmangali/
 
 1. Click on the **Power Report** to check the power consumption of both the synthesis and implementation phases.
 
-You can view the [Power Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
+You can view the [Power synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
+You can view the [Power implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf) for more details.
 
 ---
 
