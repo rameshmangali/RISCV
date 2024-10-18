@@ -269,7 +269,8 @@ This will open the Vivado project.
 
 1. At the lower panel, go to the **Reports** section.
 2. Here, you can observe the reports for both the **Synthesis** and **Implementation** processes.
-
+- [Power Synthesis Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf)
+- [Power Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf)
 ---
 
 ## Step 22: Power Analysis
