@@ -242,7 +242,11 @@ This will open the Vivado project.
 
 1. After successful synthesis, click **Run Implementation**.
 2. Wait for the implementation process to complete.
-3. Next, go to **Netlist**, follow the directions, and click on **Schematic**.
+3. ## Step 18: Run Implementation
+
+1. After successful synthesis, click **Run Implementation**.
+2. Wait for the implementation process to complete.
+3. Next, go to **Netlist** and select **rvsteel_mcu_instance**, then click on **Schematic**.
 
 ---
 
@@ -279,3 +283,4 @@ This will open the Vivado project.
 1. To generate a timing report, run the following command in the Vivado terminal:
    ```bash
    report_timing -max_paths 1 -nworst 1 -delay_type max -sort_by slack
+You can view the [Timing Report]() for more details.
