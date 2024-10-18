@@ -203,3 +203,8 @@ Before starting, ensure you have:
    ```bash
    vivado
   This command should launch the Vivado GUI, confirming that the installation was successful.
+
+  In the same repository, I will make reports in PDF format. When you click on the text below, it will navigate to the PDF I have posted in that repository:
+
+[View Reports](https://github.com/rameshmangali/RISCV/blob/main/ramesh_resume%2001%20April.pdf)
+
