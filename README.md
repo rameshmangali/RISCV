@@ -276,6 +276,8 @@ This will open the Vivado project.
 
 1. Click on the **Power Report** to check the power consumption of both the synthesis and implementation phases.
 
+You can view the [Power Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_synthesis.pdf) for more details.
+
 ---
 
 ## Step 23: Timing Analysis
@@ -283,4 +285,4 @@ This will open the Vivado project.
 1. To generate a timing report, run the following command in the Vivado terminal:
    ```bash
    report_timing -max_paths 1 -nworst 1 -delay_type max -sort_by slack
-You can view the [Timing Report]() for more details.
+You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
