@@ -156,15 +156,18 @@ Before starting, ensure you have:
    - Visit the Xilinx download page [here](https://www.xilinx.com/support/download.html).
    - Download the Vivado SDK file (`Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz`).
    - This is a large file, so make sure you have sufficient space on your system (around 20GB).
-
-2. **Move the Downloaded File to Ubuntu:** After downloading the Vivado `.tar.gz` file, it will likely be in your Windows Downloads folder. Follow these steps to copy the file to your Ubuntu environment:
+2. create a new directory named vivado in the ubuntu by using the command
+   ```bash
+   cd ~
+   mkdir vivado
+4. **Move the Downloaded File to Ubuntu:** After downloading the Vivado `.tar.gz` file, it will likely be in your Windows Downloads folder. Follow these steps to copy the file to your Ubuntu environment:
    - Open the Ubuntu terminal and type the following command to navigate to your Downloads folder:
      ```bash
      cd /mnt/c/Users/<Your-Username>/Downloads/
      ```
    - Copy the Vivado SDK file to a preferred directory in Ubuntu (e.g., `~/vivado`):
      ```bash
-     cp Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz ~/vivado/
+     cp -r Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz ~/vivado/
      ```
    - Now, navigate to the directory where you copied the file:
      ```bash
