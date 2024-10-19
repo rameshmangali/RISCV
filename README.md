@@ -23,7 +23,15 @@ This README provides a step-by-step guide to install the required software: Linu
 13. [Step 12: Download and Install Vivado](#step-12-download-and-install-vivado)
 14. [Step 13: Extract the Vivado Installation Files](#step-13-extract-the-vivado-installation-files)
 15. [Step 14: Install Vivado Using xsetup](#step-14-install-vivado-using-xsetup)
-
+16. [Step 15: Create a Project](#step-15-create-a-project)
+17. [Step 16: Add Source Files](#step-16-add-source-files)
+18. [Step 17: Run Synthesis](#step-17-run-synthesis)
+19. [Step 18: Run Implementation](#step-18-run-implementation)
+20. [Step 19: View the Device Output](#step-19-view-the-device-output)
+21. [Step 20: View the Block Diagram](#step-20-view-the-block-diagram)
+22. [Step 21: View Reports](#step-21-view-reports)
+23. [Step 22: Power Analysis](#step-22-power-analysis)
+24. [Step 23: Timing Analysis](#step-23-timing-analysis)
 ---
 
 ### Pre-requisites
