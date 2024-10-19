@@ -1,5 +1,5 @@
 # RISC-V Steel: Complete Hardware and Software Implementation
-  - ## [Using Vivado](#Installation-Guide-for-Linux-Ubuntu-Toolchain-and-Vivado-Simulator)
+    - ## [Using Vivado](#Installation-Guide-for-Linux-Ubuntu-Toolchain-and-Vivado-Simulator)
 
 ## Installation Guide for Linux, Ubuntu, Toolchain, and Vivado Simulator
 
