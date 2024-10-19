@@ -1,6 +1,6 @@
 # RISC-V Steel: Complete Hardware and Software Implementation
  - ## [Using Vivado](#Installation-Guide-for-Linux-Ubuntu-Toolchain-and-Vivado-Simulator)
- - ## [Using Spike simulator](#Installing-RISCV-Steel-on-Ubuntu-20.04-by-using-spike-simulator)
+ - ## [Using Spike simulator](#Installing-RISCV-Steel-on-Ubuntu-by-using-spike-simulator)
 
 ## Installation Guide for Linux, Ubuntu, Toolchain, and Vivado Simulator
 
@@ -296,8 +296,7 @@ This will open the Vivado project.
 
 ---
 ---
-
-## Installing RISCV Steel on Ubuntu 20.04 by using spike simulator
+## Installing RISCV Steel on Ubuntu by using spike simulator
 
 ### Step 1: Install WSL and Ubuntu
 
