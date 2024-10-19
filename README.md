@@ -2,11 +2,11 @@
   - ## Using vivado
   - ## Using Spike simulator (Software)
 
-# Installation Guide for Linux, Ubuntu, Toolchain, and Vivado Simulator
+## Installation Guide for Linux, Ubuntu, Toolchain, and Vivado Simulator
 
 This README provides a step-by-step guide to install the required software: Linux (via WSL for Windows), Ubuntu, the RISC-V GNU Toolchain, and Vivado Simulator.
 
-## Table of Contents
+### Table of Contents
 
 1. [Pre-requisites](#pre-requisites)
 2. [Step 1: Clone the Repository](#step-1-clone-the-repository)
@@ -26,7 +26,7 @@ This README provides a step-by-step guide to install the required software: Linu
 
 ---
 
-## Pre-requisites
+### Pre-requisites
 
 Before starting, ensure you have:
 - **GitBash** (for Windows users)
@@ -34,7 +34,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
 1. Open GitBash or terminal.
 2. Clone the RISC-V Steel repository:
@@ -43,7 +43,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 2: Clone the Toolchain
+### Step 2: Clone the Toolchain
 1. In the terminal (GitBash or Linux), clone the RISC-V GNU Toolchain by running the following command:
     ```bash
     git clone https://github.com/riscv/riscv-gnu-toolchain
@@ -52,7 +52,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 3: Install Linux via WSL
+### Step 3: Install Linux via WSL
 1. For Windows users, open PowerShell with Administrator privileges.
 2. Run the following command to install Linux via Windows Subsystem for Linux (WSL):
     ```bash
@@ -63,14 +63,14 @@ Before starting, ensure you have:
 
 ---
 
-## Step 4: Initial Ubuntu Setup
+### Step 4: Initial Ubuntu Setup
 1. Open the newly installed Ubuntu application.
 2. When prompted, create a unique username and password. The password will not be visible as you type.
 3. Confirm your password by retyping it.
 
 ---
 
-## Step 5: Update Ubuntu
+### Step 5: Update Ubuntu
 1. Once you're inside the Ubuntu terminal, update your system by running the following commands:
     ```bash
     sudo apt-get update
@@ -80,7 +80,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 6: Install Toolchain Dependencies
+### Step 6: Install Toolchain Dependencies
 1. To install the necessary dependencies for building the toolchain, run the following command in Ubuntu:
     ```bash
     sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev
@@ -89,7 +89,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 7: Clone Repositories in Ubuntu
+### Step 7: Clone Repositories in Ubuntu
 1. Clone the RISC-V Steel repository again, but this time inside Ubuntu:
     ```bash
     git clone https://github.com/riscv-steel/riscv-steel
@@ -105,7 +105,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 8: Navigate to Toolchain Directory
+### Step 8: Navigate to Toolchain Directory
 1. Navigate to the `riscv-gnu-toolchain` directory by using the following command:
     ```bash
     cd riscv-gnu-toolchain/
@@ -114,7 +114,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 9: Configure Toolchain
+### Step 9: Configure Toolchain
 1. Run the configuration command to prepare the toolchain for building:
     ```bash
     ./configure --prefix=/opt/riscv --with-arch=rv32izicsr --with-abi=ilp32
@@ -123,7 +123,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 10: Build Toolchain
+### Step 10: Build Toolchain
 1. Start building the toolchain by running the following command:
     ```bash
     sudo make
@@ -144,7 +144,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 11: Run Hello World Example
+### Step 11: Run Hello World Example
 1. Navigate to the hello_world example directory:
    ```bash
    cd ./riscv-steel/examples/hello_world/software
@@ -155,7 +155,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 12: Download and Install Vivado
+### Step 12: Download and Install Vivado
 1. **Download Vivado SDK:**
    - Visit the Xilinx download page [here](https://www.xilinx.com/support/download.html).
    - Download the Vivado SDK file (`Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz`).
@@ -180,7 +180,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 13: Extract the Vivado Installation Files
+### Step 13: Extract the Vivado Installation Files
 1. In the Ubuntu terminal, extract the contents of the `.tar.gz` file by running the following command:
    ```bash
    tar -xvzf Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
@@ -193,7 +193,7 @@ Before starting, ensure you have:
 
  ---
 
- ## Step 14: Install Vivado Using xsetup
+ ### Step 14: Install Vivado Using xsetup
 1. To begin the Vivado installation, run the `xsetup` script from the extracted files:
    ```bash
    sudo ./xsetup
@@ -212,7 +212,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 15: Create a Project
+### Step 15: Create a Project
 
 1. **Open Command Prompt (CMD)**  
    - Launch the CMD terminal.  
@@ -226,7 +226,7 @@ This will open the Vivado project.
 
 ---
 
-## Step 16: Add Source Files
+### Step 16: Add Source Files
 
 1. Go to the **"Source"** tab.
 2. Click on the **"+" (Add Source)** button.
@@ -235,14 +235,14 @@ This will open the Vivado project.
 
 ---
 
-## Step 17: Run Synthesis
+### Step 17: Run Synthesis
 
 1. Click **Run Synthesis**.
 2. Wait for the synthesis process to complete successfully.
 
 ---
 
-## Step 18: Run Implementation
+### Step 18: Run Implementation
 
 1. After successful synthesis, click **Run Implementation**.
 2. Wait for the implementation process to complete.
@@ -250,7 +250,7 @@ This will open the Vivado project.
 
 ---
 
-## Step 19: View the Device Output
+### Step 19: View the Device Output
 
 1. After both synthesis and implementation are complete, you can view the device output.
 2. Navigate to the **Netlist** tab.
@@ -258,14 +258,14 @@ This will open the Vivado project.
 
 ---
 
-## Step 20: View the Block Diagram
+### Step 20: View the Block Diagram
 
 1. Double-click on the **Block Diagram** in the project window.
 2. The schematic view of the **RISC-V architecture** will appear.
    - You can view the [Schematic Report](https://github.com/rameshmangali/RISCV/blob/main/Schematic%20Analysis%20Report.pdf) for more details.
 ---
 
-## Step 21: View Reports
+### Step 21: View Reports
 
 1. At the lower panel, go to the **Reports** section.
 2. Here, you can observe the reports for both the **Synthesis** and **Implementation** processes.
@@ -276,7 +276,7 @@ This will open the Vivado project.
 
 ---
 
-## Step 22: Power Analysis
+### Step 22: Power Analysis
 
 1. Click on the **Power Report** to check the power consumption of both the synthesis and implementation phases.
 
@@ -286,7 +286,7 @@ This will open the Vivado project.
 
 ---
 
-## Step 23: Timing Analysis
+### Step 23: Timing Analysis
 
 1. To generate a timing report, run the following command in the Vivado terminal:
    ```bash
