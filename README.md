@@ -284,7 +284,7 @@ This will open the Vivado project.
       wsl --install Ubuntu-20.04
       ```
    3. **Set Up User**:
-      - Follow the prompts to create a username and password (password will be invisible).
+      - create a username and password and confirm it (password will be invisible).
  
 ### Step 2: Download RISC-V Tarball
    - [**Download**](https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download/2024.09.03/riscv64-elf-ubuntu-20.04-gcc-nightly-2024.09.03-nightly.tar.gz) the zip file from the provided link.
