@@ -273,6 +273,28 @@ This will open the Vivado project.
 ---
 ## Installing RISCV Steel on Ubuntu by using spike simulator
 
+### Table of Contents
+1. [Install WSL and Ubuntu](#1-install-wsl-and-ubuntu)
+2. [Download RISC-V Tarball](#2-download-risc-v-tarball)
+3. [Access Ubuntu Terminal](#3-access-ubuntu-terminal)
+4. [Navigate to the Downloaded File](#4-navigate-to-the-downloaded-file)
+5. [Prepare the RISC-V File](#5-prepare-the-risc-v-file)
+6. [Extract the RISC-V File](#6-extract-the-risc-v-file)
+7. [Verify Extraction](#7-verify-extraction)
+8. [Update and Upgrade Packages](#8-update-and-upgrade-packages)
+9. [Install Required Libraries](#9-install-required-libraries)
+10. [Update PATH](#10-update-path)
+11. [Verify RISC-V GCC Installation](#11-verify-risc-v-gcc-installation)
+12. [Clone RISC-V ISA Simulator](#12-clone-risc-v-isa-simulator)
+13. [Install Additional Packages](#13-install-additional-packages)
+14. [Clone RISC-V Proxy Kernel](#14-clone-risc-v-proxy-kernel)
+15. [Set Up RISC-V Proxy Kernel Build](#15-set-up-risc-v-proxy-kernel-build)
+16. [Install Proxy Kernel](#16-install-proxy-kernel)
+17. [Create and Compile Hello World Program](#17-create-and-compile-hello-world-program)
+18. [Compile and Run Hello World](#18-compile-and-run-hello-world)
+19. [Generate Assembly Code](#19-generate-assembly-code)
+20. [Run with Spike in Simulation Mode](#20-run-with-spike-in-simulation-mode)
+
 ### Step 1: Install WSL and Ubuntu
 
    1. **Check Available Distributions**:
