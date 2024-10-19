@@ -313,8 +313,10 @@ This will open the Vivado project.
  
 ### Step 2: Download RISC-V Tarball
    - [**Download**](https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download/2024.09.03/riscv64-elf-ubuntu-20.04-gcc-nightly-2024.09.03-nightly.tar.gz) the zip file from the provided link.
+
 ### Step 3: Access Ubuntu Terminal
-   1. **Open Ubuntu** and search for **Ubuntu 20.04.6** in the search box.
+   1. **Open windows** and search for **Ubuntu 20.04.6** in the search box.
+
 ### Step 4: Navigate to the Downloaded File
    1. **Change Directory**:
       ```bash
@@ -322,6 +324,7 @@ This will open the Vivado project.
       cd mnt/d
       ls
       ```
+
 ### Step 5: Prepare the RISC-V File
    1. **Rename the tar.gz File**:
       - Rename the downloaded file to `riscv.tar.gz`.
