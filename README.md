@@ -32,7 +32,7 @@ Before starting, ensure you have:
 - **GitBash** (for Windows users)
 - **Windows Subsystem for Linux (WSL)**
 
----
+
 
 ### Step 1: Clone the Repository
 
@@ -41,7 +41,7 @@ Before starting, ensure you have:
    ```bash
    git clone https://github.com/riscv-steel/riscv-steel
 
----
+
 
 ### Step 2: Clone the Toolchain
 1. In the terminal (GitBash or Linux), clone the RISC-V GNU Toolchain by running the following command:
@@ -50,7 +50,6 @@ Before starting, ensure you have:
     ```
 2. This will clone the RISC-V GNU Toolchain repository to your local machine.
 
----
 
 ### Step 3: Install Linux via WSL
 1. For Windows users, open PowerShell with Administrator privileges.
@@ -61,14 +60,12 @@ Before starting, ensure you have:
 3. After WSL is installed, Ubuntu will automatically be installed.
 4. Close PowerShell and restart your PC to finalize the installation.
 
----
 
 ### Step 4: Initial Ubuntu Setup
 1. Open the newly installed Ubuntu application.
 2. When prompted, create a unique username and password. The password will not be visible as you type.
 3. Confirm your password by retyping it.
 
----
 
 ### Step 5: Update Ubuntu
 1. Once you're inside the Ubuntu terminal, update your system by running the following commands:
@@ -78,7 +75,6 @@ Before starting, ensure you have:
     ```
    This will ensure that you have the latest versions of all necessary packages.
 
----
 
 ### Step 6: Install Toolchain Dependencies
 1. To install the necessary dependencies for building the toolchain, run the following command in Ubuntu:
@@ -87,7 +83,6 @@ Before starting, ensure you have:
     ```
    This will install essential development tools and libraries required to build the RISC-V toolchain.
 
----
 
 ### Step 7: Clone Repositories in Ubuntu
 1. Clone the RISC-V Steel repository again, but this time inside Ubuntu:
@@ -103,16 +98,12 @@ Before starting, ensure you have:
     ls
     ```
 
----
-
 ### Step 8: Navigate to Toolchain Directory
 1. Navigate to the `riscv-gnu-toolchain` directory by using the following command:
     ```bash
     cd riscv-gnu-toolchain/
     ```
 2. You should now see the contents of the `riscv-gnu-toolchain` directory.
-
----
 
 ### Step 9: Configure Toolchain
 1. Run the configuration command to prepare the toolchain for building:
@@ -121,7 +112,6 @@ Before starting, ensure you have:
     ```
    The `--with-arch` and `--with-abi` options are specific to the architecture and ABI of your system. Make sure these match your requirements.
 
----
 
 ### Step 10: Build Toolchain
 1. Start building the toolchain by running the following command:
@@ -142,7 +132,6 @@ Before starting, ensure you have:
 
    Then, list the contents of the directory using the `ls` command to ensure everything is in place.
 
----
 
 ### Step 11: Run Hello World Example
 1. Navigate to the hello_world example directory:
@@ -153,7 +142,6 @@ Before starting, ensure you have:
    make
 3. If any errors occur during this process, follow the troubleshooting guide provided in the RISC-V Steel documentation or visit the repository for further assistance.
 
----
 
 ### Step 12: Download and Install Vivado
 1. **Download Vivado SDK:**
@@ -178,7 +166,6 @@ Before starting, ensure you have:
      cd ~/vivado/
      ```
 
----
 
 ### Step 13: Extract the Vivado Installation Files
 1. In the Ubuntu terminal, extract the contents of the `.tar.gz` file by running the following command:
@@ -191,7 +178,7 @@ Before starting, ensure you have:
    ls
  You should see the extracted files and folders, including the xsetup file.
 
- ---
+
 
  ### Step 14: Install Vivado Using xsetup
 1. To begin the Vivado installation, run the `xsetup` script from the extracted files:
@@ -210,8 +197,6 @@ Before starting, ensure you have:
 
   In the same repository, I will make reports in PDF format. When you click on the text below, it will navigate to the PDF I have posted in that repository:
 
----
-
 ### Step 15: Create a Project
 
 1. **Open Command Prompt (CMD)**  
@@ -224,8 +209,6 @@ Before starting, ensure you have:
 
 This will open the Vivado project.
 
----
-
 ### Step 16: Add Source Files
 
 1. Go to the **"Source"** tab.
@@ -233,14 +216,12 @@ This will open the Vivado project.
 3. Proceed to the next window and add the Verilog files (`.v` files) from the **hardware folder** located in the **board folder**.
 4. Click **Finish** to complete adding the files.
 
----
 
 ### Step 17: Run Synthesis
 
 1. Click **Run Synthesis**.
 2. Wait for the synthesis process to complete successfully.
 
----
 
 ### Step 18: Run Implementation
 
@@ -248,7 +229,6 @@ This will open the Vivado project.
 2. Wait for the implementation process to complete.
 3. Next, go to **Netlist** and select **rvsteel_mcu_instance**, then click on **Schematic**.
 
----
 
 ### Step 19: View the Device Output
 
@@ -256,14 +236,12 @@ This will open the Vivado project.
 2. Navigate to the **Netlist** tab.
 3. Follow the directions to click on **Schematic**.
 
----
 
 ### Step 20: View the Block Diagram
 
 1. Double-click on the **Block Diagram** in the project window.
 2. The schematic view of the **RISC-V architecture** will appear.
    - You can view the [Schematic Report](https://github.com/rameshmangali/RISCV/blob/main/Schematic%20Analysis%20Report.pdf) for more details.
----
 
 ### Step 21: View Reports
 
@@ -274,7 +252,6 @@ This will open the Vivado project.
 
    - You can view the [Implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Final_Implementation_Report.pdf) for more details.
 
----
 
 ### Step 22: Power Analysis
 
@@ -284,7 +261,6 @@ This will open the Vivado project.
 
    - You can view the [Power implementation Report](https://github.com/rameshmangali/RISCV/blob/main/Power%20Analysis_implementation.pdf) for more details.
 
----
 
 ### Step 23: Timing Analysis
 
@@ -294,7 +270,6 @@ This will open the Vivado project.
    ```
    - You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
 
----
 ---
 ## Installing RISCV Steel on Ubuntu by using spike simulator
 
