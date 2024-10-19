@@ -296,3 +296,16 @@ This will open the Vivado project.
 
 
 ## Installing RISCV Steel on Ubuntu 20.04 by using spike simulator
+
+### Step 1: Install WSL and Ubuntu
+
+1. **Check Available Distributions**:
+
+   ```bash
+   wsl --list --online
+2. **Install Ubuntu 20.04**:
+   ```bash
+   wsl --install Ubuntu-20.04
+   ```
+3. **Set Up User**:
+   - Follow the prompts to create a username and password (password will be invisible).
