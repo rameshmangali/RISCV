@@ -308,7 +308,7 @@ This will open the Vivado project.
       cp -r riscv.tar.gz /home/your_username
       ```
       *Replace `your_username` with your actual username.*
-   3. **Navigate to Home Directory**:
+   3. **Navigate to root Directory**:
       ```bash
       cd ~
       ls
@@ -318,7 +318,12 @@ This will open the Vivado project.
    tar -xvzf riscv.tar.gz
    ```
 ### Step 7: Verify Extraction
-   - Use the commands as shown in the image provided (if applicable).
+   - Use the commands
+     ```bash
+     ls
+     ls riscv/bin
+     ```
+     
 ### Step 8: Update and Upgrade Packages
    ```bash
    sudo apt-get update
@@ -337,7 +342,7 @@ This will open the Vivado project.
       ```bash
       nano ~/.bashrc
       ```
-      - Add the following line:
+      - Add the following line at the end of the nano window:
       ```bash
       export PATH="/home/your_username/riscv/bin:$PATH"
       ```
@@ -402,7 +407,7 @@ This will open the Vivado project.
    ```bash
    nano hello.c
    ```
-      - Add the following code:
+   - Add the following code:
       ```c
       #include <stdio.h>
       int main() {
@@ -410,7 +415,7 @@ This will open the Vivado project.
           return 0;
       }
       ```
-      - Save with `Ctrl + S` and exit with `Ctrl + X`.
+   - Save with `Ctrl + S` and exit with `Ctrl + X`.
 ### Step 18: Compile and Run Hello World
    ```bash
    riscv64-unknown-elf-gcc hello.c
@@ -427,5 +432,4 @@ This will open the Vivado project.
    ```bash
    spike pk -s a.out
    ```
-```
 - This command runs the program in simulation mode, providing additional debugging output.
