@@ -1,6 +1,5 @@
 # RISC-V Steel: Complete Hardware and Software Implementation
-  - ### Using vivado
-  - ### Using Spike simulator (Software)
+  1. [Using Vivado](#Installation-Guide-for-Linux-Ubuntu)
 
 ## Installation Guide for Linux, Ubuntu, Toolchain, and Vivado Simulator
 
