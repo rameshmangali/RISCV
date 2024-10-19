@@ -294,6 +294,8 @@ This will open the Vivado project.
    ```
    - You can view the [Timing Report](https://github.com/rameshmangali/RISCV/blob/main/timing_report_content.pdf) for more details.
 
+---
+---
 
 ## Installing RISCV Steel on Ubuntu 20.04 by using spike simulator
 
@@ -309,3 +311,142 @@ This will open the Vivado project.
    ```
 3. **Set Up User**:
    - Follow the prompts to create a username and password (password will be invisible).
+### Step 2: Download RISC-V Tarball
+- **Download** the zip file from the provided link.
+### Step 3: Access Ubuntu Terminal
+1. **Open Ubuntu** and search for **Ubuntu 20.04.6** in the search box.
+### Step 4: Navigate to the Downloaded File
+1. **Change Directory**:
+   ```bash
+   cd ../..
+   cd mnt/d
+   ls
+   ```
+### Step 5: Prepare the RISC-V File
+1. **Rename the tar.gz File**:
+   - Rename the downloaded file to `riscv.tar.gz`.
+2. **Copy the File**:
+   ```bash
+   cp -r riscv.tar.gz /home/your_username
+   ```
+   *Replace `your_username` with your actual username.*
+3. **Navigate to Home Directory**:
+   ```bash
+   cd ~
+   ls
+   ```
+### Step 6: Extract the RISC-V File
+```bash
+tar -xvzf riscv.tar.gz
+```
+### Step 7: Verify Extraction
+- Use the commands as shown in the image provided (if applicable).
+### Step 8: Update and Upgrade Packages
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+### Step 9: Install Required Libraries
+```bash
+sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev ninja-build git cmake libglib2.0-dev libslirp-dev
+```
+### Step 10: Update PATH
+1. **Check Present Working Directory**:
+   ```bash
+   pwd
+   ```
+2. **Edit .bashrc**:
+   ```bash
+   nano ~/.bashrc
+   ```
+   - Add the following line:
+   ```bash
+   export PATH="/home/your_username/riscv/bin:$PATH"
+   ```
+   - Save with `Ctrl + S` and exit with `Ctrl + X`.
+### Step 11: Verify RISC-V GCC Installation
+```bash
+riscv64-unknown-elf-gcc -v
+which riscv64-unknown-elf-gcc
+echo $PATH
+source ~/.bashrc
+which riscv64-unknown-elf-gcc
+```
+### Step 12: Clone RISC-V ISA Simulator
+```bash
+git clone https://github.com/riscv-software-src/riscv-isa-sim.git
+cd riscv-isa-sim
+```
+### Step 13: Install Additional Packages
+```bash
+sudo apt-get install device-tree-compiler libboost-regex-dev libboost-system-dev
+mkdir build
+cd build
+../configure --prefix=/home/your_username/riscv
+make
+sudo make install
+```
+- **Run Spike**:
+```bash
+spike
+```
+### Step 14: Clone RISC-V Proxy Kernel
+```bash
+cd ../..
+git clone https://github.com/riscv-software-src/riscv-pk.git
+cd riscv-pk
+```
+### Step 15: Set Up RISC-V Proxy Kernel Build
+```bash
+sudo mkdir build
+cd build
+sudo -i
+cd /home/your_username/riscv-pk/build
+make clean
+```
+### Step 16: Install Proxy Kernel
+1. **Run the Following Commands**:
+```bash
+which riscv64-unknown-elf-gcc
+ls /home/your_username/riscv/bin
+export PATH=/home/your_username/riscv/bin:$PATH
+which riscv64-unknown-elf-gcc
+../configure --prefix=/home/your_username/riscv --host=riscv64-unknown-elf --with-arch=rv64gc_zifencei
+make
+make install
+```
+### Step 17: Create and Compile Hello World Program
+1. **Navigate Up**:
+```bash
+cd ../..
+```
+2. **Create Hello World File**:
+```bash
+nano hello.c
+```
+   - Add the following code:
+   ```c
+   #include <stdio.h>
+   int main() {
+       printf("Hello, World!");
+       return 0;
+   }
+   ```
+   - Save with `Ctrl + S` and exit with `Ctrl + X`.
+### Step 18: Compile and Run Hello World
+```bash
+riscv64-unknown-elf-gcc hello.c
+spike pk a.out
+```
+- **Output**: "Hello, World!" should be displayed.
+### Step 19: Generate Assembly Code
+```bash
+riscv64-unknown-elf-gcc hello.c -S
+cat hello.s
+```
+- This displays the RISC-V assembly code of `hello.c`.
+### Step 20: Run with Spike in Simulation Mode
+```bash
+spike pk -s a.out
+```
+- This command runs the program in simulation mode, providing additional debugging output.
