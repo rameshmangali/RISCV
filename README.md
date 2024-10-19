@@ -8,10 +8,10 @@ This README provides a step-by-step guide to install the required software: Linu
 
 ### Table of Contents
 
-1. [Pre-requisites](##pre-requisites)
-2. [Step 1: Clone the Repository](##step-1-clone-the-repository)
-3. [Step 2: Clone the Toolchain](##step-2-clone-the-toolchain)
-4. [Step 3: Install Linux via WSL](##step-3-install-linux-via-wsl)
+1. [Pre-requisites](#pre-requisites)
+2. [Step 1: Clone the Repository](#step-1-clone-the-repository)
+3. [Step 2: Clone the Toolchain](#step-2-clone-the-toolchain)
+4. [Step 3: Install Linux via WSL](#step-3-install-linux-via-wsl)
 5. [Step 4: Initial Ubuntu Setup](#step-4-initial-ubuntu-setup)
 6. [Step 5: Update Ubuntu](#step-5-update-ubuntu)
 7. [Step 6: Install Toolchain Dependencies](#step-6-install-toolchain-dependencies)
