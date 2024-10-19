@@ -312,7 +312,7 @@ This will open the Vivado project.
       - Follow the prompts to create a username and password (password will be invisible).
  
 ### Step 2: Download RISC-V Tarball
-   - **Download** the zip file from the provided link.
+   - [**Download**](https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download/2024.09.03/riscv64-elf-ubuntu-20.04-gcc-nightly-2024.09.03-nightly.tar.gz) the zip file from the provided link.
 ### Step 3: Access Ubuntu Terminal
    1. **Open Ubuntu** and search for **Ubuntu 20.04.6** in the search box.
 ### Step 4: Navigate to the Downloaded File
